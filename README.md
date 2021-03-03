@@ -1,5 +1,10 @@
 # CadlineTest
 
+### Componenti
+    div-component: componente con il div modificabile
+    modify-div-component: componente per modificare il div
+### Servizi
+    modify-div-service: servizio per la modifica del componente
     .
     ├── app
     │   ├── components
