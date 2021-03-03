@@ -1,0 +1,17 @@
+<div>
+    <div>
+        <h2>Seleziona un bottone per cambiare lo sfondo</h2>
+        <button (click)="changeBackGroundColor('yellow')">GIALLO</button>
+        <button (click)="changeBackGroundColor('green')">VERDE</button>
+        <button (click)="changeBackGroundColor('blue')">BLU</button>
+    </div> 
+    <div>
+        <h2>Inserisci un testo per modificare quello sopra</h2>
+        <input #divTextInput type="text" placeholder="inserisci testo" (keyup)="changeTextLabel(divTextInput.value)">
+    </div>
+    <div>
+        <h2>Seleziona un valore per cambiare l'opacità</h2>
+        <input #divOpacityInput type="number" min=0 max=1 step=0.1 (change)="changeDivOpacity(divOpacityInput.value)" (keyup)="changeDivOpacity(divOpacityInput.value)">
+    </div>   
+        
+</div>
